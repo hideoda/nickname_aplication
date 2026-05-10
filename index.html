@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>あだ名一覧</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>あだ名一覧</h1>
+
+    <p id="count"></p>
+
+    <div class="add-area">
+      <input type="text" id="nicknameInput" placeholder="あだ名を入力">
+      <button onclick="addNickname()">追加</button>
+    </div>
+
+    <div class="button-area">
+      <button onclick="sortNicknames()">五十音順</button>
+    </div>
+
+    <div id="undoArea" style="display:none;">
+        <button onclick="undoDelete()">元に戻す</button>
+    </div>
+
+    <ul id="nicknameList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
